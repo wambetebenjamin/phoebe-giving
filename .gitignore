@@ -1,0 +1,11 @@
+node_modules
+.next
+out
+.env
+.env.local
+data/store.json
+public/uploads
+*.log
+.DS_Store
+image-search
+tsconfig.tsbuildinfo
