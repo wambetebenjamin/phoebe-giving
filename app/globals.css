@@ -1,0 +1,46 @@
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+:root {
+  --phoebe-green: #18a577;
+  --phoebe-blue: #4c7bcb;
+  --phoebe-teal: #20c997;
+  --phoebe-cyan: #17a2b8;
+  --phoebe-cream: #fff5ed;
+  --phoebe-ink: #1f2a37;
+}
+
+body {
+  background: #ffffff;
+  color: var(--phoebe-ink);
+}
+
+.form-control:focus {
+  border-color: #18a577;
+  box-shadow: 0 0 0 0.15rem rgba(24, 165, 119, 0.2);
+}
+
+.chart-wrap {
+  width: 100%;
+  height: 280px;
+}
+
+.receipt-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 16px 40px rgba(76, 123, 203, 0.12);
+  padding: 28px;
+}
+
+.step-dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 6px;
+  background: #d9e2ec;
+}
+
+.step-dots span.on {
+  background: #18a577;
+}

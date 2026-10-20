@@ -1,0 +1,300 @@
+/* Palette shift layered on the Unicare stylesheet.
+   Gold accents from the template primary are remapped to the zip green and blue.
+   Layout, type, and spacing stay with the template. */
+
+a {
+  color: #18a577;
+}
+
+a:hover,
+a:focus {
+  color: #4c7bcb;
+}
+
+.wrap {
+  background: #fff5ed !important;
+  border-bottom: 1px solid rgba(76, 123, 203, 0.15);
+}
+
+.wrap .phone span,
+.wrap .phone a,
+.social-media p a span {
+  color: #4c7bcb !important;
+}
+
+.ftco-navbar-light {
+  position: sticky !important;
+  top: 0 !important;
+  background: #ffffff !important;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.06);
+  z-index: 20;
+}
+
+.ftco-navbar-light .navbar-brand,
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+  color: #1f2a37 !important;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover,
+.ftco-navbar-light .navbar-nav > .nav-item.active > a {
+  color: #18a577 !important;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item.cta > a {
+  background: #18a577 !important;
+  border-color: #18a577 !important;
+  color: #ffffff !important;
+  border-radius: 40px;
+}
+
+.hero-wrap .slider-text .subheading,
+.heading-section .subheading {
+  color: #18a577 !important;
+}
+
+.bg-primary,
+.btn.btn-primary {
+  background: #4c7bcb !important;
+  border-color: #4c7bcb !important;
+  color: #ffffff !important;
+}
+
+.btn.btn-primary:hover {
+  background: transparent !important;
+  color: #4c7bcb !important;
+}
+
+.footer {
+  background: #fff5ed !important;
+  color: #1f2a37;
+}
+
+.footer p,
+.footer .footer-heading,
+.footer ul.list-unstyled li a,
+.footer .copyright {
+  color: #1f2a37 !important;
+}
+
+.footer a {
+  color: #18a577 !important;
+}
+
+.footer ul.list-unstyled li a {
+  border-bottom-color: rgba(76, 123, 203, 0.12);
+}
+
+.hero-wrap .overlay {
+  background: #4c7bcb;
+  opacity: 0.35;
+}
+
+.fund-card {
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: #ffffff;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+  height: 100%;
+}
+
+.fund-card.is-selected,
+.fund-card:hover {
+  border-color: #18a577;
+  box-shadow: 0 10px 24px rgba(24, 165, 119, 0.16);
+  transform: translateY(-2px);
+}
+
+.amount-chip {
+  border: 1px solid #4c7bcb;
+  color: #4c7bcb;
+  background: #ffffff;
+  border-radius: 40px;
+  padding: 8px 14px;
+  font-weight: 700;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.amount-chip.is-selected,
+.amount-chip:hover {
+  background: #4c7bcb;
+  color: #ffffff;
+}
+
+.admin-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.admin-table tbody tr:hover {
+  background: #fff5ed;
+}
+
+.kpi-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 22px 20px;
+  box-shadow: 0 8px 24px rgba(76, 123, 203, 0.08);
+  border-top: 4px solid #18a577;
+  height: 100%;
+}
+
+.kpi-card:nth-child(2) { border-top-color: #4c7bcb; }
+.kpi-card:nth-child(3) { border-top-color: #20c997; }
+.kpi-card:nth-child(4) { border-top-color: #17a2b8; }
+
+.panel {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 22px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  margin-bottom: 24px;
+}
+
+.wa-btn,
+.voice-btn {
+  position: fixed;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  z-index: 9998;
+  bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.wa-btn {
+  right: 24px;
+  background: #25d366;
+  animation: wa-entrance 1.6s ease-out 2;
+}
+
+.voice-btn {
+  left: 24px;
+  background: #4c7bcb;
+}
+
+.voice-btn.is-speaking::after {
+  content: "";
+  position: absolute;
+  inset: -7px;
+  border-radius: 50%;
+  border: 2px solid #18a577;
+  animation: voice-ring 1.2s ease-out infinite;
+}
+
+.tip {
+  position: absolute;
+  bottom: 68px;
+  background: #1f2a37;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.wa-btn:hover .tip,
+.voice-btn:hover .tip,
+.wa-btn:focus .tip,
+.voice-btn:focus .tip {
+  opacity: 1;
+}
+
+.wa-btn .tip { right: 0; }
+.voice-btn .tip { left: 0; }
+
+@keyframes wa-entrance {
+  0% { transform: scale(0.7); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.55); }
+  60% { transform: scale(1); box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+@keyframes voice-ring {
+  0% { transform: scale(0.9); opacity: 0.8; }
+  100% { transform: scale(1.25); opacity: 0; }
+}
+
+.cookie-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9990;
+  background: #ffffff;
+  border-top: 3px solid #18a577;
+  box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.08);
+  padding: 16px 96px;
+}
+
+.cookie-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(31, 42, 55, 0.45);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 16px;
+}
+
+.cookie-panel {
+  background: #ffffff;
+  width: min(640px, 100%);
+  border-radius: 12px;
+  padding: 22px;
+  margin-bottom: 80px;
+}
+
+.progress-track {
+  height: 14px;
+  background: #e9eef5;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #18a577;
+  border-radius: 40px;
+}
+
+.loader-skip {
+  position: absolute;
+  bottom: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  color: #4c7bcb;
+  border: 1px solid #4c7bcb;
+  border-radius: 40px;
+  padding: 8px 18px;
+  font-weight: 700;
+}
+
+.loader-percent {
+  position: absolute;
+  top: calc(50% + 40px);
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Montserrat", Arial, sans-serif;
+  color: #1f2a37;
+  font-weight: 700;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #ftco-loader .circular,
+  .wa-btn,
+  .voice-btn.is-speaking::after {
+    animation: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .cookie-banner { padding: 16px 16px 88px; }
+}
